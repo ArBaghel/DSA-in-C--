@@ -1,28 +1,21 @@
 # include <iostream>
 using namespace std;
-int main(){
-    int n,fact=1;
-    cout<<"enter the number:";
-    cin>>n;
-    if (n==0){
-        cout<<"Factorial not possible \n";
-
-    }
-    if(n==1){
-        cout<<"Factorial is 1 \n";
+int factorial(int n){
+    if(n==0 || n==1){
+        return 1;
     }
     else{
-        fact=1;
-        while(n>=1){
-            fact=fact*n;
-            n-=1;
-
-        }
-        cout<<"Factorial is:"<<fact<<endl;
+        return n* factorial(n-1);
+    }
+}
+int main(){
+    int a;
+    cout<<"Enter the number:";
+    cin>> a;
+    cout<<"Factorial is:"<<factorial(a);
     }
         
 
         
     
 
-}
