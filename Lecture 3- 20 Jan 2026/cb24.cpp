@@ -1,3 +1,8 @@
+//              1 
+//           2  2  2
+//        3  3  3  3  3
+//     4  4  4  4  4  4  4
+//  5  5  5  5  5  5  5  5  5
 #include <iostream>
 using namespace std;
 void pattern(int n)
@@ -8,16 +13,16 @@ void pattern(int n)
         {
             if (j <= n - i)
             {
-                cout << " ";
+                cout << "   ";
             }
             else
             {
-                cout << i;
+                cout << " "<<i<<" ";
             }
         }
         for (int k = 2; k <= i; k++)
         {
-            cout << i;
+            cout <<" " <<i<<" ";
         }
         cout << endl;
     }

@@ -1,3 +1,8 @@
+//              1 
+//           1  1  1
+//        1  1  1  1  1
+//     1  1  1  1  1  1  1
+//  1  1  1  1  1  1  1  1  1
 #include <iostream>
 using namespace std;
 void pattern(int n)
@@ -12,12 +17,12 @@ void pattern(int n)
             }
             else
             {
-                cout << " 1 ";
+                cout << " "<<1<<" ";
             }
         }
         for (int k = 2; k <= i; k++)
         {
-            cout << " 1 ";
+            cout << " "<<1<<" ";
         }
         cout << endl;
     }

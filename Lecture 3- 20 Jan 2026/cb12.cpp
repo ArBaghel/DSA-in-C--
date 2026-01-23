@@ -1,25 +1,31 @@
- // n = 5  
- 
-//      *  
-//    * ! *  
-//   * ! * ! *  
-//  * ! * ! * ! *  
-// * ! * ! * ! * ! * 
+// n = 5
 
-#include<iostream>
+//      *
+//    * ! *
+//   * ! * ! *
+//  * ! * ! * ! *
+// * ! * ! * ! * ! *
+
+#include <iostream>
 using namespace std;
-void pattern(int n){
-    for (int i=1;i<=n;i++){
-        for (int j=1;j<=n;j++){
-            if(j<=n-i) cout <<"  ";
-            else if (j==n) cout<<"*";
-            else cout<<"* ! ";
+void pattern(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (j <= n - i)
+                cout << "  ";
+            else if (j == n)
+                cout << "*";
+            else
+                cout << "* ! ";
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-int main(){
+int main()
+{
     pattern(5);
     return 0;
 }
-    
