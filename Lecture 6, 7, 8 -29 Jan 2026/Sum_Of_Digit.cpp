@@ -17,6 +17,6 @@ int main()
     int n;
     cout << "Enter the Number:";
     cin >> n;
-    cout << "Sum of the digits of the number:" << Sumdigit(n);
+    cout << "Sum of the digits of the number: " << Sumdigit(n);
     return 0;
 }
